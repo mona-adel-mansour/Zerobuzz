@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="nyhed.css">
+  <script src="js/js.js"></script>
+</head>
+
+
+
+
+<body>
+  <div class="topnav" id="topnav">
+      <a href="index.html" class="logo">
+          <img src="images/logofinal3.png" alt="Logo" class="logo-img">
+      </a> 
+     
+  <nav> 
+ 
+      <ul class="menu">
+        <li><a href="index.html" class="Nyhed-links">Nyhed</a></li>
+        <li><a href="produkter.html" class="vores-produkter">Vores produkter</a></li>
+        <li><a href="sortiment.html" class="Sortiment">sortiment</a></li>
+        <li><a href="omos.html" class="om os-links">om os</a></li>
+        
+  </ul>
+</nav>
+     <a href="#" class="icon-mobil" id="myTopnav" onclick="toggleMenu()">☰</a>
+  </div>
+
+  <main> 
+
+
+
+<section class="flex">
+  <img class="billede2-forside" src="images/forside2-uden-tekst kopier.png" alt="nyheden" class="img2">
+  <div class="tekst2-forside overlay-text">
+      <h1>Oplev vores produkter</h1>
+      <p class="tekstTop">
+          <br> Vi fører nogle af Danmarks stærkeste brands! 
+          <br> Klik dig rundt her og gå på opdagelse i vores produktporteføjle
+          <br> DANMARKS FORETRUKNE alkoholfri ØL!
+          
+      </p>
+
+</section>
+
+
+
+
+<section>
+        
+  <div class="text-image-container2">
+      <div class="herotext1">
+          <h1>Vores revolution</h1>
+          <h3> Zerobuzz Brew er her for at revolutionere din drikkeoplevelse med ansvarligt og moderat alkoholforbrug.
+              Som pionerer inden for alkoholfri øl, forpligter vi os til at gøre moderat forbrug cool og trendy gennem
+              vores Zerobuzz Brew-mærke. Vi sætter fokus på ansvarligt forbrug og opfordrer vores unge målgruppe mellem
+              20-25 år til at nyde livet fuldt ud – uden kompromis. Drik smart, vær ansvarlig, og vær en del af Zerobuzz-revolutionen!</h3>
+      </div>
+      <div class="con-img2">
+          <img src="images/forside1.png" alt="bottle" width="400px">
+      </div>
+  </div>
+
+  
+
+
+
+  <div class="text-image-container">
+      <div class="con-img">
+          <img src="images/forside3.png" alt="bottle" width="400px">
+      </div>
+  
+      <div class="herotext">
+          <h1>Vores magiske øldrinks</h1>
+          <h3>vores magiske øldrinks
+              Vi har en dedikeret side på vores virksomheds hjemmeside omkring ansvarlig
+              alkoholindtagelse og de potentielle sundhedsmæssige virkninger af alkoholforbrug,
+              vi har fokus på Alkoholfri øl og sundhed i Zerobuzz Brew virksomheden. </h3>
+      </div>
+  </div>
+
+
+
+
+
+  <section>
+      
+      <div class="text-image-container2">
+          <div class="herotext1">
+              <h1>Vores revolution</h1>
+              <h3> Zerobuzz Brew er her for at revolutionere din drikkeoplevelse med ansvarligt og moderat alkoholforbrug.
+                  Som pionerer inden for alkoholfri øl, forpligter vi os til at gøre moderat forbrug cool og trendy gennem
+                  vores Zerobuzz Brew-mærke. Vi sætter fokus på ansvarligt forbrug og opfordrer vores unge målgruppe mellem
+                  20-25 år til at nyde livet fuldt ud – uden kompromis. Drik smart, vær ansvarlig, og vær en del af Zerobuzz-revolutionen!</h3>
+          </div>
+          <div class="con-img2">
+              <img src="images/nyhed4.png" alt="bottle"  class="image" width="400px">
+          </div>
+      </div>
+
+      <footer class="footer">
+        <hr>
+        <section class="footer-rækker">
+            <article>
+             <h5 class="footer-link" data-target="kontakt">Kontakt os</h5>
+                <form class="contact-form" id="kontakt-formular">Kontakt os</h5>
+            </article>
+            <article>
+                <h5>Bestilling</h5>
+            </article>
+            <article>
+                <h5>Lokation</h5>
+            </article>
+            <article>
+                <h5>Privatlivspolitik</h5>
+            </article>
+            <article>
+                <h5>information</h5>
+            </article>
+        </section>
+        <section class="copyrights">
+            <section class="zero-copy">
+                    <p>
+                        <img src="images/insta.png" alt="some" class="some">
+                    </p>
+                    <article>
+                        <p>ZeroBuzz Brew</p>
+                    </article>
+                    <article>
+                        <p>©2024 ZeroBuzz Brew. All Rights Reserved</p>
+                </article>
+            </section>
+        </section>
+    </footer>
+</body>
+  </main>
+
+
+
+  <script>
+    function toggleMenu() {
+        var x = document.getElementById("topnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+  const footerLinks = document.querySelectorAll(".footer-link");
+  const kontaktFormular = document.getElementById("kontakt-formular");
+
+
+    </script>
+
+<script> 
+    footerLinks.forEach(link => {
+      link.addEventListener("click", function() {
+          const target = kontaktFormular;
+          if (target === "kontakt") {
+              // Vis kontaktformularen, skjul andre sektioner
+              kontaktFormular.style.display = "block";
+              // Skjul andre sektioner i footer
+              // Giv dem klassen "hidden" eller anvend display: none; eller visibility: hidden; som ønsket
+          } else {
+              // Vis den relevante sektion baseret på target
+          }
+      });
+  });
+});
+    </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>

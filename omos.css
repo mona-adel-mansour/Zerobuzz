@@ -1,0 +1,342 @@
+/* Basic Reset */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, verdana, sans-serif;
+    
+}
+/* Topnav styling */
+.topnav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9E9C0;
+    padding: 10px 20px;
+   overflow: hidden;
+   box-shadow: #F9E9C0(0, 0, 0, 0.5);
+   margin-top: 0px;
+}
+.topnav a {
+    color: #211818;
+    padding: 0px 0px;
+    font-size: 5px;
+    display: inline;
+    justify-content: space-between;
+    align-items: inline;
+    text-align: inline left;
+    padding: 10px 16px;
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    /*position: absolute;*/
+    position: relative;
+    align-items: start;
+    width: 35%;
+}
+.logo-img {
+    height: 25%; /* Juster højden efter behov */
+    width: 25%;
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: left;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu a {
+    text-decoration: none; /* Ingen understregning som standard */
+    color: #211818;
+    font-size: 18px;
+    transition: text-decoration 0.3s; /* Glidende overgang for hover-effekt */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-color: #211818; /* Juster farven på understregningen om nødvendigt */
+    text-decoration-thickness: 2px; /* Juster tykkelsen på understregningen om nødvendigt */
+    text-underline-offset: 3px; /* Juster afstanden mellem tekst og understregning om nødvendigt */
+    text-decoration-skip-ink: none; /* Sikrer at understregningen ikke springer over de nedre dele af bogstaverne */
+}
+.icon-mobil {
+    display: none!important; 
+    align-items: end;
+    
+}
+
+
+
+/* Responsive styling to header */
+@media (max-width: 768px) {
+    .topnav {
+        display: flex;
+       /* flex-direction: column;
+        align-items: flex-end;*/
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .logo {
+    align-items: baseline;
+    width: 60%;
+    }
+    .menu li {
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .menu a {
+        /*display: block;*/
+        width: 100%;
+        text-decoration: none;
+        transition: none;
+       
+    }
+
+    .topnav.responsive .menu {
+        display: flex;
+    }
+
+    .icon-mobil {
+        align-items: baseline;
+        display: block!important;
+    }
+}
+
+
+
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.6;
+    display: inline-block;
+    padding-left: 10px;
+    padding: 25px; /* Tilføjer noget padding til body */
+    text-align: right;
+}
+
+.image-container {
+    text-align: center; /* Centrerer billedet og teksten */
+    margin-bottom: 20px; /* Tilføjer afstand under containeren */
+}
+
+.styled-image {
+    width: 85%; /* Juster bredden efter behov */
+    height: auto;; /* Bevar billedets proportioner */
+    border: 0px solid #000; /* Tilføj en kant */
+    border-radius: 8px; /* Gør hjørnerne runde */
+    margin-top: 10px; /* Tilføj en margin under billedet */
+}
+
+.image-container p {
+    margin-top: 10px; /* Tilføjer afstand over teksten */
+    font-size: 1.9em; /* Juster tekststørrelsen efter behov */
+}
+
+
+/* Responsiv styling */
+@media (max-width: 768px) {
+    body {
+        padding: 15px; /* Reducerer padding for mindre skærme */
+        text-align: left; /* Justerer teksten til venstre på mindre skærme */
+    }
+    .image-container p {
+        font-size: 1em; /* Reducerer tekststørrelsen på mindre skærme */
+    
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Yderligere reducerer padding for meget små skærme */
+    }
+    .styled-image {
+        width: 100%; /* Sørger for at billedet fylder hele bredden */
+        
+    }
+    .image-container p {
+        font-size: 0.9em; /* Yderligere reducerer tekststørrelsen på meget små skærme */
+    }
+}
+
+
+
+
+
+
+
+main {
+    padding: 50px 20px; /* Adds space around the main content */
+}
+
+.cover-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the text and the image */
+    padding: 20px;
+    
+}
+
+.cover-text {
+    max-width: 50%;
+    text-align: left; /* Aligns the text to the left */
+
+}
+
+.cover-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px; /* Adds space above the paragraph */
+    
+}
+
+.cover-text h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+.billede1 {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+/* Responsive styling til første del */
+@media (max-width: 768px) {
+    .cover-section {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .cover-text, .billede1 {
+        max-width: 100%;
+        margin: 0; /* Removes margin on smaller screens */
+    }
+
+    .cover-text {
+        margin-bottom: 30px; /* Adds space between the text and the image */
+    }
+}
+
+
+
+
+body {
+    font-family: Arial, verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+   
+}
+section {
+    background-color: #ffffff;
+    padding: 50px 20px;
+}
+.container-text3 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+p {
+    font-size: 1.1em;
+    color: #000000;
+    line-height: 1.6;
+    display: inline-block;
+    padding-left: 10px;
+    padding: 20px; /* Tilføjer noget padding til body */
+    text-align: left;
+    width: 500;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*style footer*/
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.footer p {
+    color: #372222;
+    font-family: "verdana";
+    font-size: 0.8rem; /* Reduced font size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.footer h4 {
+    color: #383838;
+    font-family: "verdana";
+    font-size: 2rem; /* Reduced font size */
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.footer-rækker {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5% 3% 5%;
+    font-size: 2vw; /* Reduced font size */
+    margin-top: 30px;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem; /* Reduced font size */
+    margin: 0 5% 0 7%;
+}
+
+.some {
+    width: 45px;
+    height: auto;
+}

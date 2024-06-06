@@ -1,0 +1,351 @@
+/* Basic Reset */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, verdana, sans-serif;
+    
+}
+/* Topnav styling */
+.topnav {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9E9C0;
+    padding: 10px 20px;
+   overflow: hidden;
+   box-shadow: #F9E9C0(0, 0, 0, 0.5);
+   margin-top: 0px;
+}
+.topnav a {
+    color: #211818;
+    padding: 0px 0px;
+    font-size: 5px;
+    display: inline;
+    justify-content: space-between;
+    align-items: inline;
+    text-align: inline left;
+    padding: 10px 16px;
+    font-size: 30px;
+}
+
+.logo {
+    display: flex;
+    /*position: absolute;*/
+    position: relative;
+    align-items: start;
+    width: 35%;
+}
+.logo-img {
+    height: 25%; /* Juster højden efter behov */
+    width: 25%;
+}
+
+/* Menu styling */
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: left;
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu a {
+    text-decoration: none; /* Ingen understregning som standard */
+    color: #211818;
+    font-size: 18px;
+    transition: text-decoration 0.3s; /* Glidende overgang for hover-effekt */
+}
+
+.menu a:hover {
+    text-decoration: underline; /* Understregning ved hover */
+    text-decoration-color: #211818; /* Juster farven på understregningen om nødvendigt */
+    text-decoration-thickness: 2px; /* Juster tykkelsen på understregningen om nødvendigt */
+    text-underline-offset: 3px; /* Juster afstanden mellem tekst og understregning om nødvendigt */
+    text-decoration-skip-ink: none; /* Sikrer at understregningen ikke springer over de nedre dele af bogstaverne */
+}
+.icon-mobil {
+    display: none!important; 
+    align-items: end;
+    
+}
+
+
+
+/* Responsive styling to header */
+@media (max-width: 768px) {
+    .topnav {
+        display: flex;
+       /* flex-direction: column;
+        align-items: flex-end;*/
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .logo {
+    align-items: baseline;
+    width: 60%;
+    }
+    .menu li {
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .menu a {
+        /*display: block;*/
+        width: 100%;
+        text-decoration: none;
+        transition: none;
+       
+    }
+
+    .topnav.responsive .menu {
+        display: flex;
+    }
+
+    .icon-mobil {
+        align-items: baseline;
+        display: block!important;
+    }
+}
+
+/* styling for det øvertse del */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Main content styling */
+main {
+    padding: 50px 20px; /* Adds space around the main content */
+}
+
+.cover-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the text and the image */
+    padding: 20px;
+    
+}
+
+.cover-text {
+    max-width: 50%;
+    text-align: left; /* Aligns the text to the left */
+
+}
+
+.cover-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px; /* Adds space above the paragraph */
+}
+
+.cover-text h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 1.6em;
+    font-weight: bold;
+
+}
+
+.billede1 {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px; /* Adds space between the text and the image */
+}
+
+/* Responsive styling til første del */
+@media (max-width: 768px) {
+    .cover-section {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .cover-text, .billede1 {
+        max-width: 100%;
+        margin: 0; /* Removes margin on smaller screens */
+    }
+
+    .cover-text {
+        margin-bottom: 30px; /* Adds space between the text and the image */
+    }
+}
+
+/* Main content styling for del billede 2 & 3 */
+
+.cover-section2 {
+    display: flex;
+    align-items: center;
+}
+
+.cover-section2 .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.cover-section2 .text-and-image {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cover-section2 .text2 {
+    order: 2; /* Ændrer rækkefølgen, så teksten kommer til højre */
+    margin-left: 20%;
+    margin-top: 0%;
+    width: 100ch;
+    font-size: 1.6em;
+    font-family: Arial, Verdana, sans-serif;
+
+}
+
+.cover-section2 .billede2 {
+    max-width: 100%;
+    margin-right: 20px; /* Tilføj en margin til billedet for at skabe plads mellem billedet og teksten */
+}
+
+@media only screen and (max-width: 768px) {
+    .cover-section2 .content {
+        flex-direction: column; /* Skifter til stablet layout på mindre skærme */
+    }
+
+    .cover-section2 .text2 {
+        order: 1; /* Ændrer rækkefølgen, så teksten kommer først på mindre skærme */
+    }
+
+    .cover-section2 .billede2 {
+        margin-right: 0; /* Fjerner højremarginen på mindre skærme */
+        margin-top: 20px; /* Tilføj en margin over billedet for at skabe plads */
+    }
+}
+
+/* del 3*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+.billede3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.billede3 .tekst-and-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.billede3 .tekst3 {
+    margin-bottom: 20px; /* Tilføj en margin under teksten for at skabe plads mellem teksten og billedet */
+        font-size: 1.6em;
+        line-height: 1.6;
+        margin-top: 20px;
+    
+}
+
+.billede3 {
+    max-width: 450px;
+    height: auto; /* Sørg for, at billedet ændrer højden i forhold til bredden */
+    max-height: 300px; /* Juster den maksimale højde efter behov */
+    margin-bottom: 10%;
+}
+
+.produkter{
+    width: 0px;
+    height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .billede3 .tekst-and-image {
+        flex-direction: column; /* Skift til stablet layout på mindre skærme */
+        text-align: center; /* Centrer teksten på mindre skærme */
+    }
+
+    .billede3 .billede3 {
+        margin-bottom: 0; /* Fjern bundmarginen på mindre skærme */
+    }
+}
+
+
+
+
+
+
+
+
+
+/*style footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.footer p {
+    color: #372222;
+    font-family: "verdana";
+    font-size: 0.8rem; /* Reduced font size */
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.footer h4 {
+    color: #383838;
+    font-family: "verdana";
+    font-size: 2rem; /* Reduced font size */
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.footer-rækker {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5% 3% 5%;
+    font-size: 2vw; /* Reduced font size */
+    margin-top: 30px;
+}
+
+.copyrights {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem; /* Reduced font size */
+    margin: 0 5% 0 7%;
+}
+
+.some {
+    width: 45px;
+    height: auto;
+}
+
+
+
